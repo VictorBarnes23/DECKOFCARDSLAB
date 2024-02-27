@@ -1,0 +1,14 @@
+﻿@model DOC
+
+<h1>Draw A Card</h1>
+
+@{
+    foreach (Card c in Model.Cards)
+    {
+        <div>
+        <h2>@c.Value</h2>
+        <img src="@c.Image" />
+        </div>
+
+    }
+}
